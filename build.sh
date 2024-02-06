@@ -37,9 +37,8 @@ do
           --build-arg BUILD_QQNT_LINK=${BUILD_QQNT_LINK} \
           --build-arg BUILD_ARCH=${BUILD_ARCH} \
           --platform ${BUILD_PLATFORM} \
-          -t ghcr.io/ilharp/docker-qqnt:${BUILD_IMAGE_ARCH_TAG} \
-          -t ilharp/qqnt:${BUILD_IMAGE_ARCH_TAG} \
-          .
+          -t xiyang6666/qqnt:${BUILD_IMAGE_ARCH_TAG} \
+          . --push
         ;;
       *)
         docker buildx build \
@@ -47,9 +46,8 @@ do
           --build-arg BUILD_QQNT_LINK=${BUILD_QQNT_LINK} \
           --build-arg BUILD_ARCH=${BUILD_ARCH} \
           --platform ${BUILD_PLATFORM} \
-          -t ghcr.io/ilharp/docker-qqnt:${BUILD_IMAGE_ARCH_TAG} \
-          -t ilharp/qqnt:${BUILD_IMAGE_ARCH_TAG} \
-          .
+          -t xiyang6666/qqnt:${BUILD_IMAGE_ARCH_TAG} \
+          . --push
         ;;
     esac
   done
