@@ -12,7 +12,7 @@ echo "Building ilharp/qqnt:${BUILD_TAG} using builder: ${BUILD_DOCKER_BUILDER}\n
 
 BUILD_ARCH_LIST=(
   amd64
-  arm64
+  # arm64
 )
 
 BUILD_QQNT_DATA_VERSION_LATEST=${BUILD_QQNT_DATA_LIST%,*}
