@@ -38,7 +38,7 @@ do
           --build-arg BUILD_ARCH=${BUILD_ARCH} \
           --platform ${BUILD_PLATFORM} \
           -t xiyang6666/qqnt:${BUILD_IMAGE_ARCH_TAG} \
-          . --push
+          .
         ;;
       *)
         docker buildx build \
@@ -47,7 +47,7 @@ do
           --build-arg BUILD_ARCH=${BUILD_ARCH} \
           --platform ${BUILD_PLATFORM} \
           -t xiyang6666/qqnt:${BUILD_IMAGE_ARCH_TAG} \
-          . --push
+          .
         ;;
     esac
   done
