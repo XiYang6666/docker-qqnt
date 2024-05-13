@@ -13,7 +13,8 @@ RUN apt update && \
   apt install -y fonts-noto-cjk wget && \
   \
   # QQNT
-  wget -O /tmp/qqnt.deb ${BUILD_QQNT_LINK}_${BUILD_ARCH}.deb && \
+  # wget -O /tmp/qqnt.deb ${BUILD_QQNT_LINK}_${BUILD_ARCH}.deb && \
+  wget -O /tmp/qqnt.deb ${BUILD_QQNT_LINK} && \
   apt install -y /tmp/qqnt.deb && \
   \
   # Cleanup
