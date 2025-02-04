@@ -7,6 +7,8 @@ ARG BUILD_ARCH
 
 COPY --chmod=0755 rootfs /
 
+RUN groupadd -g 1000 linuxuser && useradd -u 1000 -g linuxuser -m linuxuser
+
 RUN apt update && \
   \
   # Install packages
